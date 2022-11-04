@@ -21,7 +21,7 @@ class Progress extends Component {
           );
         })}
         <span
-          className={`Progress-Line${length >= currentIndex ? "-active" : ""}`}
+          className={`Progress-Line${currentIndex >= length ? "-active" : ""}`}
         ></span>
       </div>
     );
