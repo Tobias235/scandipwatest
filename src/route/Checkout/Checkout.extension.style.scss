@@ -1,0 +1,63 @@
+.Checkout {
+  &::before {
+    display: none !important;
+  }
+}
+
+.Progress-Bar-Container {
+  background-color: var(--secondary-base-color);
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Line-Container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Progress-Circle-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .Progress-Circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--primary-dark-color);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  .Progress-Location {
+    font-weight: bold;
+    font-size: 12px;
+    align-items: center;
+  }
+}
+
+.Progress-Active {
+  background-color: black !important;
+  height: 700px;
+}
+
+.Progress-Line {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+  line-height: 60px;
+
+  &-active {
+    width: 100%;
+    height: 10px;
+    background-color: var(--primary-dark-color);
+  }
+}
